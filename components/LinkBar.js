@@ -1,26 +1,14 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { Link } from 'expo-router';
+import { StyleSheet, View } from 'react-native';
+import LinkButton from './LinkButton';
 
 const LinkBar = () => {
 
     return (
         <View style={styles.container}>
-            <Link href='/' asChild>
-                <Pressable style={styles.btn}>
-                    <Text>Home</Text>
-                </Pressable>
-            </Link>
-            <Link href='/about' style={styles.linkBtn}>About</Link>
-            <Link href='/gifs' asChild>
-                <Pressable style={styles.btn}>
-                    <Text>GIFS</Text>
-                </Pressable>
-            </Link>
-            <Link href='/weather' asChild>
-                <Pressable style={styles.btn}>
-                    <Text>WEATHER</Text>
-                </Pressable>
-            </Link>
+            <LinkButton linkPath='/' btnTitle="Home"/>
+            <LinkButton linkPath='/about' btnTitle="About"/>
+            <LinkButton linkPath='/gifs' btnTitle="GIFS"/>
+            <LinkButton linkPath='/weather' btnTitle="Weather"/>
         </View>
     );
 }
