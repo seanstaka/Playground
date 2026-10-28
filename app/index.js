@@ -10,10 +10,11 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 
+
 import GameCard from '../components/GameCard';
 import NavBar from '../components/NavBar';
 import LinkBar from '../components/LinkBar';
-
+import { appColors } from '../constants/appColors';
 // 1. Import local JSON data directly
 
 export default function App() {
@@ -90,7 +91,7 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#0F172A', // Gaming dark theme (Slate)
+        backgroundColor: appColors.primary, // Gaming dark theme (Slate)
     },
     headerTitle: {
         fontSize: 26,
