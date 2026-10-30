@@ -1,6 +1,6 @@
 const appColors = {
     primary: '#492012',
-    secondary: '#3dca68'  //change on add-colorsheet.  Pull Request first.
+    secondary: '#beda37'  //second change on branch, commit first, then switch to master
 }
 
 export default appColors;
