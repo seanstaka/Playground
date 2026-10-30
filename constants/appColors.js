@@ -1,6 +1,6 @@
 const appColors = {
     primary: '#492012',
-    secondary: '#6d73b5'  //taks-add-button change.  Pull request second
+    secondary: '#3dca68'  //change on add-colorsheet.  Pull Request first.
 }
 
 export default appColors;
